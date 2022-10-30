@@ -6,30 +6,25 @@ public class MyApp2{
     public static void main(String[] args) {
 
 
-        int aLe = 13;
-        int bLe = 24;
-        int cLe = 46;
-        int allWarriors = 860;
+        int warriorLi = 13;
+        int archerLi = 24;
+        int riderLi = 46;
+        int quantityLi = 860;
 
-        int aWarriors = aLe * allWarriors;
-        int bWarriors = bLe * allWarriors;
-        int cWarriors = cLe * allWarriors;
+        int maxPowerLi = (warriorLi + archerLi + riderLi) * quantityLi;
 
-        int totalDamage = aWarriors + bWarriors + cWarriors;
-        System.out.println(totalDamage);
 
-        int aMin = 9;
-        int bMin = 35;
-        int cMin = 12;
-        double allWarriors2 = (int) 860 * 1.5;
+        System.out.println("армія Лі:" + maxPowerLi);
 
-        int aWarriors2 = (int) ((int) aMin * allWarriors2);
-        int bWarriors2 = (int) ((int) bMin * allWarriors2);
-        int cWarriors2 = (int) ((int) cMin * allWarriors2);
+        int warriorMin = 9;
+        int archerMin = 35;
+        int riderMin = 12;
+        int quantityMin = (int) (quantityLi * 1.5);
 
-        int totalDamage2 = aWarriors2 + bWarriors2 + cWarriors2;
+        int maxPowerMin = (warriorMin + archerMin + riderMin) * quantityMin;
 
-        System.out.println(totalDamage2);
+
+        System.out.println("армія Мінь:" + maxPowerMin);
 
 
 
