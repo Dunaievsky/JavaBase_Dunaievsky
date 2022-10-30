@@ -17,6 +17,7 @@ public class MyApp3 {
         int length = (a + b + c) * 2;
 
         System.out.println("Сумарна довжина паралелепіпеда = " + length + " cm");
+
         {
 
 
