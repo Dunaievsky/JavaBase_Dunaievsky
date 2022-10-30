@@ -14,7 +14,7 @@ public class MyApp2{
         int maxPowerLi = (warriorLi + archerLi + riderLi) * quantityLi;
 
 
-        System.out.println("армія Лі:" + maxPowerLi);
+        System.out.println("атака Лі:" + maxPowerLi);
 
         int warriorMin = 9;
         int archerMin = 35;
@@ -24,7 +24,7 @@ public class MyApp2{
         int maxPowerMin = (warriorMin + archerMin + riderMin) * quantityMin;
 
 
-        System.out.println("армія Мінь:" + maxPowerMin);
+        System.out.println("атака Мінь:" + maxPowerMin);
 
 
 
