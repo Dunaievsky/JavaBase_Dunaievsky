@@ -19,9 +19,9 @@ public class MyApp2{
         int warriorMin = 9;
         int archerMin = 35;
         int riderMin = 12;
-        int quantityMin = (int) (quantityLi * 1.5);
+        double quantityMin = (int) (quantityLi * 1.5);
 
-        int maxPowerMin = (warriorMin + archerMin + riderMin) * quantityMin;
+        int maxPowerMin = (int) ((int) (warriorMin + archerMin + riderMin) * quantityMin);
 
 
         System.out.println("атака Мінь:" + maxPowerMin);
