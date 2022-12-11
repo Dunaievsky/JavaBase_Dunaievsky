@@ -17,7 +17,7 @@ public class Burger {
         System.out.println(this);
     }
 
-    @Override
+
     public String toString() {
         return "Burger 'full' consists of:" +
                 " " + bun +
