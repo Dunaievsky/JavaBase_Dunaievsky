@@ -1,106 +1,102 @@
 package com.hillel.dunaievsky.homeworks.homework14;
 
 public class Tracker {
-    final String name;
-    final int birthDay;
-    final String birthMonth;
-    final int birthYear;
-    final String mail;
-    final String phoneNumber;
-    String surname;
-    double weight;
-    String pressure;
-    int steps;
-    int age;
+    private final String name;
+    private final int day;
+    private final int month;
+    private final int year;
+    private final String email;
+    private final String phone;
+    private int age;
+    private String surname;
+    private int weight;
+    private int pressure;
+    private int stepNumber;
 
-    public int getAge() {
-        return age;
+
+    public Tracker(String name, int day, int month, int year, String email, String phone, String surname,
+                int weight, int pressure, int stepNumber) {
+        this.name = name;
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.age = 2020 - year;
+        this.email = email;
+        this.phone = phone;
+        this.surname = surname;
+        this.weight = weight;
+        this.pressure = pressure;
+        this.stepNumber = stepNumber;
+    }
+
+    public void printAccountInfo() {
+        System.out.println("User: " + surname + " " + name + '\n' + "Was born " + day + "." + month + "." + year + " - "
+                + age + " years." + '\n' + "E-mail: " + email + '\n' + "Phone number: " + phone + '\n' + "Weight: " +
+                weight + ", " + "pressure: " + pressure + ", " + "step number today: " + stepNumber + ".");
     }
 
     public String getName() {
         return name;
     }
 
-    public int getBirthDay() {
-        return birthDay;
+    public int getDay() {
+        return day;
     }
 
-    public String getBirthMonth() {
-        return birthMonth;
+    public int getMonth() {
+        return month;
     }
 
-    public int getBirthYear() {
-        return birthYear;
+    public int getYear() {
+        return year;
     }
 
-    public String getMail() {
-        return mail;
+    public String getEmail() {
+        return email;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhone() {
+        return phone;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public String getPressure() {
+    public int getPressure() {
         return pressure;
     }
 
-    public int getSteps() {
-        return steps;
+    public int getStepNumber() {
+        return stepNumber;
     }
 
     public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
-    public void setPressure(String pressure) {
+    public void setPressure(int pressure) {
         this.pressure = pressure;
     }
 
-    public void setSteps(int steps) {
-        this.steps = steps;
+    public void setStepNumber(int stepNumber) {
+        this.stepNumber = stepNumber;
     }
-
-    public Tracker(String name, int birthDay, String birthMonth, int birthYear, String mail, String phoneNumber, String surname, double weight, String pressure, int steps) {
-        this.name = name;
-        this.birthDay = birthDay;
-        this.birthMonth = birthMonth;
-        this.birthYear = birthYear;
-        this.mail = mail;
-        this.phoneNumber = phoneNumber;
-        this.surname = surname;
-        this.weight = weight;
-        this.pressure = pressure;
-        this.steps = steps;
-        this.age = 2020 - birthYear;
-    }
-
-    void printAccountInfo() {
-        System.out.println("Ім'я: " + getName());
-        System.out.println("Прізвище " + getSurname());
-        System.out.println("Дата народження: " + getBirthDay() + " " + getBirthMonth() + " " + getBirthYear() + "р.");
-        System.out.println("Вік, повних років: " + getAge());
-        System.out.println("E-mail: " + getMail());
-        System.out.println("Контактний номер телефону: " + getPhoneNumber());
-        System.out.println("Вага, кг: " + getWeight());
-        System.out.println("Тиск, мм.рт.ст.: " + getPressure());
-        System.out.println("Кількість кроків за день: " + getSteps());
-        System.out.println();
-    }
-
 }
+
+
 
 
 
