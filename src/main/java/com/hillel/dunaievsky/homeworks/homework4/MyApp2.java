@@ -4,50 +4,28 @@ public class MyApp2{
 
 
     public static void main(String[] args) {
+        int attackSoldierLi = 13;
+        int attackArcherLi = 24;
+        int attackRiderLi = 46;
+
+        int sumLi = 860;
+
+        int sumAmountArmyLi = (attackSoldierLi + attackArcherLi + attackRiderLi) * sumLi;
+
+        System.out.println("IndexSumAmountArmyLi = " + sumAmountArmyLi);
 
 
-        int warriorLi = 13;
-        int archerLi = 24;
-        int riderLi = 46;
-        int quantityLi = 860;
+        int attackSoldierMin = 9;
+        int attackArcherMin = 35;
+        int attackRiderMin = 12;
 
-        int maxPowerLi = (warriorLi + archerLi + riderLi) * quantityLi;
+        final double COEFFICIENT = sumLi * 1.5;
 
+        double sumAmountArmyMin = (attackSoldierMin + attackArcherMin + attackRiderMin) * COEFFICIENT;
 
-        System.out.println("атака Лі:" + maxPowerLi);
-
-        int warriorMin = 9;
-        int archerMin = 35;
-        int riderMin = 12;
-        double quantityMin = (int) (quantityLi * 1.5);
-
-        int maxPowerMin = (int) ((int) (warriorMin + archerMin + riderMin) * quantityMin);
-
-
-        System.out.println("атака Мінь:" + maxPowerMin);
-
-
-
-
-
-
-
-
-        {
-        }
-
-
-
-
-
-        {
-        }
-
-
-
-
+        System.out.println("IndexSumAmountArmyMin = " + sumAmountArmyMin);
     }
-    }
+}
 
 
 
